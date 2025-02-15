@@ -1,13 +1,15 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #fff;
 }
 
-header {
-    background-color: #222;
+/* Navigation Bar */
+nav {
+    background: #1f1f1f;
     padding: 15px;
     text-align: center;
 }
@@ -15,46 +17,67 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-.hero {
-    text-align: center;
-    padding: 50px;
-    background: #0078D7;
-    color: white;
+nav ul li a:hover {
+    color: #00aaff;
 }
 
-.timeline, .projects, .contact {
-    max-width: 800px;
+/* Projects Section */
+.projects {
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: #1f1f1f;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-item, .project-item {
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     padding: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
 }
 
-.timeline-item h3, .project-item h3 {
+.project-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-info {
+    max-width: 600px;
+}
+
+.project-item h3 {
+    color: #00aaff;
     margin: 0;
-    color: #0078D7;
 }
 
-.contact a {
-    color: #0078D7;
-    text-decoration: none;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-item img {
+        width: 100%;
+        max-width: 300px;
+    }
 }
