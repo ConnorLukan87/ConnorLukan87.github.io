@@ -69,6 +69,41 @@ nav ul li a:hover {
     margin: 0;
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adjusts space between image and bio */
+    max-width: 1000px;
+}
+
+.profile img {
+    width: 250px; /* Increased size */
+    height: auto;
+    border-radius: 0; /* Removes rounded corners */
+}
+
+.bio {
+    max-width: 600px;
+}
+
+.bio h1 {
+    margin: 0;
+    font-size: 32px; /* Slightly larger for emphasis */
+}
+
+.bio p {
+    margin: 8px 0;
+    font-size: 18px; /* Increased readability */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .project-item {
