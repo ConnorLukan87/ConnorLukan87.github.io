@@ -129,6 +129,11 @@ nav ul li a:hover {
     animation: glowing 2s infinite alternate;
 }
 
+.regular-glow-text {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
