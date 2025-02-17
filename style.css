@@ -110,6 +110,13 @@ nav ul li a:hover {
     text-align: center;  /* Ensures text inside elements is centered */
 }
 
+.glow-text {
+    color: white;
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),
+        0 0 10px rgba(255, 255, 255, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.4);
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
